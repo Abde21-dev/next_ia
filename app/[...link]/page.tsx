@@ -1,4 +1,5 @@
 import React from "react"
+import Chat from "../components/Chat";
 
 interface PageProps {
   params : {
@@ -24,7 +25,7 @@ const decodedLink = reconstructUrl({url : linkArray})
 
   return (
     <div>
-      {decodedLink}
+     <Chat decodedLink={decodedLink}></Chat>
     </div>
   )
 }
